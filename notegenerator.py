@@ -93,17 +93,24 @@ def notes():
             print "0. Cancel"
             userinput = raw_input("> ")
             if userinput == "1":
-                print "Overwriting..."
-                path = path.replace(" ", "\\ ")
-                template = "{}\n\n{}\n\nAssignments:\n\nNotes:\n".format(currentclass, date)
-                path = path.replace("\\ ", " ")
-                with open(path, 'w+') as note:
-                    note.write(template)
-                note.close()
-                print "Successful. Opening {}...".format(texteditor)
-                path = path.replace(" ", "\\ ")
-                command = "{} {}".format(texteditor, path)
-                os.system(command)
+                print "Are you sure you want to overwrite?"
+                print "1. Overwrite"
+                print "0. Cancel"
+                userinput = raw_input("> ")
+                if userinput == "1":
+                    print "Overwriting..."
+                    path = path.replace(" ", "\\ ")
+                    template = "{}\n\n{}\n\nAssignments:\n\nNotes:\n".format(currentclass, date)
+                    path = path.replace("\\ ", " ")
+                    with open(path, 'w+') as note:
+                        note.write(template)
+                    note.close()
+                    print "Successful. Opening {}...".format(texteditor)
+                    path = path.replace(" ", "\\ ")
+                    command = "{} {}".format(texteditor, path)
+                    os.system(command)
+                elif userinput == "0":
+                    menu()
             elif userinput == "2":
                 print "Opening with {}...".format(texteditor)
                 path = path.replace(" ", "\\ ")
