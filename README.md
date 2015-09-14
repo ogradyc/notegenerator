@@ -8,3 +8,5 @@ planned features:
   -ability to change thing in config file without deleting it entirely
   
   -editing of template from inside the program without having to mess with hardcode
+
+  -gui?
