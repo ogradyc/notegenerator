@@ -13,7 +13,7 @@
 #limitations under the License.
 
 # Using Python curiosity to improve everyday tasks
-# http://c9n.org/noteGenerator ** need to create this webpage
+# https://github.com/ogradyc/notegenerator
 # Using PyInstaller to build .exe files - http://stackoverflow.com/questions/32963057/is-there-a-py2exe-version-thats-compatible-with-python-3-5/36508064#36508064
 #---2.type and enter: pip install pyinstaller
 #---3.Again at Command Prompt type and enter: cd c:\....(the Folder where your file example.py is located)
