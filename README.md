@@ -1,12 +1,8 @@
 # notegenerator
-generates files for taking notes
+Trying to fork this here because I also have a script that generates files for taking notes. I've had my python script for a little bit, but I haven't posted to Git hub till now because I'm looking to get a better official change log going while I try to make this script avaliable to be used by a wider audience. If this is not the approprate use of a fork, let me know and I'll fix it, but I do fully intend to compair my script with the other one to see if I can glean more ideas on the same concept. 
 
-a basic script that creates and manages directories that you want to save notes in. code isn't great so far, just made this quickly for something to do. if you find something wrong with the code or want to help out in improving it, feel free to send a pull request.
+Python script which uses a template and scrapes data from other systems to populate order-specific data in the variable fields within the template. This then generates a plain-text document and local folder structure that can be used at a starting point for research and notes about an order. This program aims to help streamline and automate some of the repetitive research steps. 
 
-planned features:
-  
-  -ability to change thing in config file without deleting it entirely
-  
-  -editing of template from inside the program without having to mess with hardcode
-
-  -gui?
+Input: template 
+[noteGenerator scrapes data and populates template variables] 
+Output: Plain-text document, local folder structure and other attachments or relevant files related to an order. 
